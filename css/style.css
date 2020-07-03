@@ -196,16 +196,11 @@ header .textos-header {
   justify-content: space-evenly;
 }
 
-.card {
-  width: 165px;
-  height: 165px;
-}
-
 .cards .card {
   background: #4d0686;
   display: flex;
   width: 46%;
-  height: 200;
+  height: 165px;
   justify-content: space-evenly;
   align-items: center;
   border-radius: 5px;
@@ -236,7 +231,7 @@ header .textos-header {
 
 .about-services {
   background-color: #f2f2f2;
-  padding-bottom: 30px;
+  padding-bottom: 70px;
 }
 
 .servicio-cont {
@@ -301,4 +296,73 @@ footer {
   font-size: 24px;
   margin: 20px 0px 0px 0px;
   color: #ccc;
+}
+
+/* adaptar responsive */
+
+@media screen and (max-width: 800px) {
+  header {
+    background-position: center;
+  }
+
+  .contenedor-sobre-nosotros {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sobre-nosotros .contenido-texto {
+    width: 80%;
+  }
+
+  .imagen-about-us {
+    width: 80%;
+  }
+
+  .contenido-texto h3 {
+    padding-top: 10px;
+  }
+
+  /* Galeria */
+
+  .imagen-port {
+    width: 44%;
+  }
+
+  /* Cliente */
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards .card {
+    width: 90%;
+  }
+
+  .cards .card:first-child {
+    margin-bottom: 30px;
+  }
+
+  /* servicios */
+
+  .servicio-cont {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .servicio-ind {
+    width: 90%;
+    text-align: center;
+  }
+
+  .servicio-ind img {
+    width: 80%;
+  }
+
+  .servicio-ind:nth-child(1),
+  .servicio-ind:nth-child(2) {
+    margin-bottom: 60px;
+  }
 }
