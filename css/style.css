@@ -91,7 +91,8 @@ header .textos-header {
 .wave {
   position: absolute;
   width: 100%;
-  bottom: 0px;
+  /* bottom: 0px; */
+  top: 500px;
 }
 
 /* about us*/
@@ -300,9 +301,13 @@ footer {
 
 /* adaptar responsive */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 870px) {
   header {
     background-position: center;
+  }
+
+  .wave {
+    bottom: 0px;
   }
 
   .contenedor-sobre-nosotros {
@@ -364,5 +369,78 @@ footer {
   .servicio-ind:nth-child(1),
   .servicio-ind:nth-child(2) {
     margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 530px) {
+    nav {
+      text-align: center;
+      padding: 30px 0 0 0;
+    }
+
+    nav > a {
+      margin-right: 5px;
+    }
+
+    .textos-header h1 {
+      font-size: 25px;
+    }
+
+    .textos-header h2 {
+      font-size: 20px;
+    }
+
+    /* ABOUT US */
+
+    .imagen-about-us {
+      margin-bottom: 60px;
+      width: 90%;
+    }
+
+    .sobre-nosotros .contenido-texto {
+      width: 95%;
+    }
+
+    /* Galeria */
+    .imagen-port {
+      width: 90%;
+    }
+
+    /* Cliente */
+
+    .cards .card {
+      height: 450px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cards .card img {
+      height: 100px;
+      width: 100px;
+    }
+
+    /* FOOTER */
+    .contenedor-footer {
+      flex-direction: column;
+      border: none;
+    }
+
+    .content-foo {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .content-foo h4 {
+      border: none;
+    }
+
+    .content-foo p {
+      color: #ccc;
+      border-bottom: 1px solid #f2f2f2;
+      padding-bottom: 20px;
+    }
+
+    .titulo-final {
+      font-size: 20px;
+    }
   }
 }
